@@ -1,0 +1,17 @@
+<p>golfui works!</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Player ID</th>
+      <th>Player Name</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of players">
+      <td>{{ player.id }}</td>
+      <td>{{ player.name }}</td>
+      <td>{{ player.score }}</td>
+    </tr>
+  </tbody>
+</table>
