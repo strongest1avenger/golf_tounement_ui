@@ -1,13 +1,22 @@
 
-import { AppComponent } from './app.component';
-import { GolfuiComponent } from './golfui/golfui.component';
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
+import { AppComponent } from './app.component';
+
+const config: SocketIoConfig = { url: 'https://mst-full-stack-dev-test.herokuapp.com/', options: {} };
 
 @NgModule({
   declarations: [
-    AppComponent,
-    GolfuiComponent
+    AppComponent
   ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    SocketIoModule.forRoot(config)
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
