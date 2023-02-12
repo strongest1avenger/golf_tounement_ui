@@ -14,148 +14,161 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>MSTID</th>
-            <th>Match</th>
-            <th>matchID</th>
-            <th>First</th>
-            <th>Last</th>
-            <th>TVName</th>
-            <th>Sex</th>
-            <th>Nationality</th>
-            <th>Eastern</th>
-            <th>Handicap</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ player.MSTID }}</td>
-            <td>{{ player.Match }}</td>
-            <td>{{ player.matchID }}</td>
-            <td>{{ player.First }}</td>
-            <td>{{ player.Last }}</td>
-            <td>{{ player.TVName }}</td>
-            <td>{{ player.Sex }}</td>
-            <td>{{ player.Nationality }}</td>
-            <td>{{ player.Eastern }}</td>
-            <td>{{ player.Handicap }}</td>
-          </tr>
-          <hr />
-        </tbody>
-        <thead>
-          <tr>
-            <th>leaderboardID</th>
-            <th>Score</th>
-            <th>OutSTP</th>
-            <th>OutStrokes</th>
-            <th>Today</th>
-            <th>TotalSTP</th>
-            <th>TotalStrokes</th>
-            <th>UniquePosition</th>
-            <th>course</th>
-            <th>holesPlayed</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ player.leaderboardID }}</td>
-            <td>{{ player.Score }}</td>
-            <td>{{ player.OutSTP }}</td>
-            <td>{{ player.OutStrokes }}</td>
-            <td>{{ player.Today }}</td>
-            <td>{{ player.TotalSTP }}</td>
-            <td>{{ player.TotalStrokes }}</td>
-            <td>{{ player.UniquePosition }}</td>
-            <td>{{ player.course }}</td>
-            <td>{{ player.holesPlayed }}</td>
-          </tr>
-        </tbody>
-        <hr />
-        <thead>
-          <tr>
-            <th>CalculatedRankInteger</th>
-            <th>orderInMatch</th>
-            <th>position</th>
-            <th>round</th>
-            <th>status</th>
-            <th>teeStart</th>
-            <th>teeTime</th>
-            <th>InStrokes</th>
-            <th>OutStrokes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ player.CalculatedRankInteger }}</td>
-            <td>{{ player.orderInMatch }}</td>
-            <td>{{ player.position }}</td>
-            <td>{{ player.round }}</td>
-            <td>{{ player.status }}</td>
-            <td>{{ player.teeStart }}</td>
-            <td>{{ player.teeTime }}</td>
-            <td>{{ player.InStrokes }}</td>
-            <td>{{ player.OutStrokes }}</td>
-          </tr>
-        </tbody>
-        <hr />
-        <thead>
-          <tr>
-            <th>Hole</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-            <th>7</th>
-            <th>8</th>
-            <th>9</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ player.Hole1Strokes }}</td>
-            <td>{{ player.Hole2Strokes }}</td>
-            <td>{{ player.Hole3Strokes }}</td>
-            <td>{{ player.Hole4Strokes }}</td>
-            <td>{{ player.Hole5Strokes }}</td>
-            <td>{{ player.Hole6Strokes }}</td>
-            <td>{{ player.Hole7Strokes }}</td>
-            <td>{{ player.Hole8Strokes }}</td>
-            <td>{{ player.Hole9Strokes }}</td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th>Hole</th>
-            <th>10</th>
-            <th>11</th>
-            <th>12</th>
-            <th>13</th>
-            <th>14</th>
-            <th>15</th>
-            <th>16</th>
-            <th>17</th>
-            <th>18</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ player.Hole10Strokes }}</td>
-            <td>{{ player.Hole11Strokes }}</td>
-            <td>{{ player.Hole12Strokes }}</td>
-            <td>{{ player.Hole13Strokes }}</td>
-            <td>{{ player.Hole14Strokes }}</td>
-            <td>{{ player.Hole15Strokes }}</td>
-            <td>{{ player.Hole16Strokes }}</td>
-            <td>{{ player.Hole17Strokes }}</td>
-            <td>{{ player.Hole18Strokes }}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="container-fluid">
+      <div class="row">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>MSTID</th>
+              <th>Match</th>
+              <th>matchID</th>
+              <th>First</th>
+              <th>Last</th>
+              <th>TVName</th>
+              <th>Sex</th>
+              <th>Nationality</th>
+              <th>Eastern</th>
+              <th>Handicap</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ player.MSTID }}</td>
+              <td>{{ player.Match }}</td>
+              <td>{{ player.matchID }}</td>
+              <td>{{ player.First }}</td>
+              <td>{{ player.Last }}</td>
+              <td>{{ player.TVName }}</td>
+              <td>{{ player.Sex }}</td>
+              <td>{{ player.Nationality }}</td>
+              <td>{{ player.Eastern }}</td>
+              <td>{{ player.Handicap }}</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>leaderboardID</th>
+              <th>Score</th>
+              <th>OutSTP</th>
+              <th>OutStrokes</th>
+              <th>Today</th>
+              <th>TotalSTP</th>
+              <th>TotalStrokes</th>
+              <th>UniquePosition</th>
+              <th>course</th>
+              <th>holesPlayed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ player.leaderboardID }}</td>
+              <td>{{ player.Score }}</td>
+              <td>{{ player.OutSTP }}</td>
+              <td>{{ player.OutStrokes }}</td>
+              <td>{{ player.Today }}</td>
+              <td>{{ player.TotalSTP }}</td>
+              <td>{{ player.TotalStrokes }}</td>
+              <td>{{ player.UniquePosition }}</td>
+              <td>{{ player.course }}</td>
+              <td>{{ player.holesPlayed }}</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>CalculatedRankInteger</th>
+              <th>orderInMatch</th>
+              <th>position</th>
+              <th>round</th>
+              <th>status</th>
+              <th>Amature</th>
+              <th>teeStart</th>
+              <th>teeTime</th>
+              <th>InStrokes</th>
+              <th>OutStrokes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ player.CalculatedRankInteger }}</td>
+              <td>{{ player.orderInMatch }}</td>
+              <td>{{ player.position }}</td>
+              <td>{{ player.round }}</td>
+              <td>{{ player.status }}</td>
+              <td>{{ player.Amature }}</td>
+              <td>{{ player.teeStart }}</td>
+              <td>{{ player.teeTime }}</td>
+              <td>{{ player.InStrokes }}</td>
+              <td>{{ player.OutStrokes }}</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Hole</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Strokes</td>
+              <td>{{ player.Hole1Strokes }}</td>
+              <td>{{ player.Hole2Strokes }}</td>
+              <td>{{ player.Hole3Strokes }}</td>
+              <td>{{ player.Hole4Strokes }}</td>
+              <td>{{ player.Hole5Strokes }}</td>
+              <td>{{ player.Hole6Strokes }}</td>
+              <td>{{ player.Hole7Strokes }}</td>
+              <td>{{ player.Hole8Strokes }}</td>
+              <td>{{ player.Hole9Strokes }}</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Hole</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Strokes</td>
+              <td>{{ player.Hole10Strokes }}</td>
+              <td>{{ player.Hole11Strokes }}</td>
+              <td>{{ player.Hole12Strokes }}</td>
+              <td>{{ player.Hole13Strokes }}</td>
+              <td>{{ player.Hole14Strokes }}</td>
+              <td>{{ player.Hole15Strokes }}</td>
+              <td>{{ player.Hole16Strokes }}</td>
+              <td>{{ player.Hole17Strokes }}</td>
+              <td>{{ player.Hole18Strokes }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+    <h3>To do</h3>
+    <p>
+      Create a default element of n/a for before the first bit of data has
+      pushed
+    </p>
+    <p>make a better visual representation</p>
+    <p>
+      Add any extra features for example likelihood of winning calculated
+      backend.
+    </p>
   </body>
 </html>
